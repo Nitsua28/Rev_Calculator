@@ -1,2 +1,2 @@
 # Rev_Calculator
-Calcuator using html,css,javascript
+Calculator using html, css, javascript
