@@ -1,0 +1,42 @@
+body {
+    background-color: #E1E5F8;
+}
+
+h1{
+    text-align: center;
+}
+
+.calculator-container{
+    margin: auto;
+}
+
+.container {  display: grid;
+    grid-template-columns: 0.8fr 0.3fr 1.2fr 1.7fr 1fr;
+    grid-template-rows: 1.6fr 1.2fr 0.5fr 0.7fr;
+    gap: 4px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "slideValue-container slider-container slider-container slider-container slider-container"
+      "divide-container divide-container add-container history-container clear-container"
+      "multiply-container multiply-container subtract-container output-container clear-container"
+      "multiply-container multiply-container subtract-container output-container clear-container";
+  }
+  
+  .output-container { grid-area: output-container; }
+  
+  .slider-container { grid-area: slider-container; }
+  
+  .clear-container { grid-area: clear-container; }
+  
+  .multiply-container { grid-area: multiply-container; }
+  
+  .divide-container { grid-area: divide-container; }
+  
+  .subtract-container { grid-area: subtract-container; }
+  
+  .add-container { grid-area: add-container; }
+  
+  .history-container { grid-area: history-container; }
+  
+  .slideValue-container { grid-area: slideValue-container; }
+  
