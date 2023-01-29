@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    
+
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  </head>
+
+  <body>
     <h1>Annoyingly Inefficient Slide Calculator</h1>
     <div class="calculator-container">
-        <div class="container">
-            <div class="output-container">
-                <h2><span id="outputValue"></span></h2>
-            </div>
-            <div class="slider-container">
-                <input type="range" min="0" max="9" value="3" class="slider" id="myRange" oninput="rerender()">
-                <button id="input-button" class="grid-button" onclick="input_button()">Input</button>
-            </div>
-            <div class="clear-container">
-                <button id = "clear-button" class="grid-button" onclick="clear_button()">C</button>
-            </div>
-            <div class="multiply-container">
-                <button id = "multiply-button" class="grid-button" onclick="operate('*')">x</button>
-            </div>
-            <div class="divide-container">
-                <button id = "divide-button" class="grid-button" onclick="operate('/')">/</button>
-            </div>
-            <div class="subtract-container">
-                <button id = "substract-button" class="grid-button" onclick="operate('-')">-</button>
-            </div>
-            <div class="add-container" onclick="operate('+')">
-                <button id = "add-button"class="grid-button"  >+</button>
-            </div>
-            <div class="history-container">
-                <h2><span id="historyValue"></span></h2>
-            </div>
-            <div class="slideValue-container">
-                <h2><span id="slideValue"></span></h2>
-            </div>
-            <div class="equals-container">
-                <button id = "equals-button" class="grid-button" onclick="calculate()">=</button>
-            </div>
-          </div>
+      <div class="container">
+        <div class="output-container">
+          <h2><span id="outputValue"></span></h2>
+        </div>
+        <div class="slider-container">
+          <input type="range" min="0" max="9" value="3" class="slider" id="myRange" oninput="rerender()">
+          <button id="input-button" class="grid-button" onclick="input_button()">Input</button>
+        </div>
+        <div class="clear-container">
+          <button id="clear-button" class="grid-button" onclick="clear_button()">C</button>
+        </div>
+        <div class="multiply-container">
+          <button id="multiply-button" class="grid-button" onclick="operate('*')">x</button>
+        </div>
+        <div class="divide-container">
+          <button id="divide-button" class="grid-button" onclick="operate('/')">/</button>
+        </div>
+        <div class="subtract-container">
+          <button id="substract-button" class="grid-button" onclick="operate('-')">-</button>
+        </div>
+        <div class="add-container" onclick="operate('+')">
+          <button id="add-button" class="grid-button">+</button>
+        </div>
+        <div class="history-container">
+          <h2><span id="historyValue"></span></h2>
+        </div>
+        <div class="slideValue-container">
+          <h2><span id="slideValue"></span></h2>
+        </div>
+        <div class="equals-container">
+          <button id="equals-button" class="grid-button" onclick="calculate()">=</button>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
+
 </html>
